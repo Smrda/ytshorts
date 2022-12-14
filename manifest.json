@@ -1,0 +1,19 @@
+{
+    "name": "YTshorts",
+    "description": "Turn off displaying youtube shorts",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author": "smrda",
+    "icons": {
+	"128": "off.png"
+    },
+    "action": {
+	"default_title": "Youtube Shorts OFF"
+    },
+    "permissions": ["activeTab", "scripting", "storage", "declarativeContent", "nativeMessaging"],
+    "host_permissions": ["*://www.youtube.com/"],
+    "background": {
+	"service_worker": "background.js",
+	"type": "module"
+    }
+}
